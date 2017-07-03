@@ -1,0 +1,39 @@
+{
+  "cars": [
+    {
+      "make": "Mercury",
+      "model": "Cougar",
+      "year": "1992",
+      "price": "1500",
+      "description": "This is an immaculate 1998 Mercury Cougar with only 25000 miles on it! The breaks might go out on you.. in the rain on a hill.. and the wheel bearing might break on you in a tunnel but at least it is turquoise."
+    },
+    {
+    	"make": "Toyota",
+    	"model": "Camery",
+    	"year": "1998",
+    	"price": "2400",
+    	"description": "This is great 1998 machines name is Yoda. It has 150000 miles on it. The tires may or may not blow up on you..."
+    },
+    {
+    	"make": "Dodge",
+    	"model": "Ram 2500",
+    	"year": "2004",
+    	"price": "3000",
+    	"description": "This quad-door, 2500, black, lifted, can be yours for only 3000! It is not very good in rain... it may or may not hydroplane into a tree."
+    },
+    {
+    	"make": "Jeep",
+    	"model": "Wrangler Sport",
+    	"year": "2012",
+    	"price": "25000",
+    	"description": "This beautiful lifted tinted black 4 door Jeep is perfect for you 1st date mudding needs."
+    },
+    {
+    	"make": "Volkswagen",
+    	"model": "Jetta",
+    	"year": "2016",
+    	"price": "17000",
+    	"description": "This Jetta is brand spakin new- built in june 2016! Beautifully made German car with only one accident!"
+    },
+  ]
+}
