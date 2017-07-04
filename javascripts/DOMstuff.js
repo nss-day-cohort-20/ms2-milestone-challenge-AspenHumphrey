@@ -1,35 +1,38 @@
 function carCard(car) {
     console.log("car", car);
-    let car = document.createElement("car");
-    car.classList.add("car");
+    let myCar = document.createElement("myCar");
+    myCar.classList.add("myCar");
 
     let header = document.createElement("header");
     header.classList.add("carHeader");
-    header.innerHTML = car.make + "" + car.model + "" + car.year;
-    car.appendChild(header);
-    console.log(car.make, car.model, car.year);
+    header.innerHTML = myCar.make + "" + myCar.model + "" + myCar.year;
+    myCar.appendChild(header);
+    console.log(myCar.make, myCar.model, myCar.year);
 
     let section = document.createElement("section");
     section.classList.add("carSection");
-    section.innerHTML = car.description;
-    car.appendChild("section");unepected
-    console.log(car.description);
+    section.innerHTML = myCar.description;
+    myCar.appendChild(section);
+    console.log(myCar.description);
 
     let footer = document.createElement("footer");
     footer.classList.add("carFooter");
-    footer.innerHTML = car.price;
-    car.appendChild("footer");
-    console.log(carFooter);
+    footer.innerHTML = myCar.price;
+    myCar.appendChild(footer);
+    console.log(myCar.footer);
 
-    return car
-    console.log("car?", car);
-};
+    return myCar
+    console.log(myCar);
+}
 
-// function printCar() {
-//     for (var i = 0; i < cars.length; i++) {
-//         console.log("cars", cars[i]);
-//         var create = createCard(cars[i]);
-//         console.log("printCar", create);
-//     }
-// }
-// printCar();
+let populateCarCard = document.getElementById("carContainer");
+
+function populateDom() {
+    for (var i = 0; i < cars.length; i++) {
+        console.log("cars", cars[i]);
+        var create = createCard(cars[i]);
+        console.log("printCar", create);
+        populateCarCard.appendChild(create);
+    }
+}
+populateDom();

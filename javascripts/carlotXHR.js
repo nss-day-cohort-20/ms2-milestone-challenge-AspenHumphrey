@@ -14,13 +14,15 @@ var CarLot = (function (globalScopeCarLot) {
         _car_inventory = JSON.parse(event.target.responseText).cars;
 
         });
-        inventoryLoader.open("GET", "javascripts/inventory.json");
+        inventoryLoader.open("GET", "/inventory.json");
         inventoryLoader.send();
       }
     }
+});
         globalScopeCarLot.Inventory = inventory;
         return globalScopeCarLot     
-}(CarLot || {}))});
+
+}(CarLot || {}));
 
 
 
