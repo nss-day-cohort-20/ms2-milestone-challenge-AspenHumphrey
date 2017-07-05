@@ -1,24 +1,27 @@
 var CarLot = (function (globalScopeCarLot) {
 
   // Define a private scope variable to store cars
-  let _car_inventory = [];  
+  let _car_inventory = [];
+
+  globalScopeCarLot.test = "hello"
 
   // Start building the Object that will be attached
   // to the CarLot.Inventory namespace
   let inventory = Object.create(null, {
     loadInventory: {
-      value: function (callback) {
+      value: function (populateDomFromDomStuff) {
+        console.log("callback?", populateDomFromDomStuff);
         var inventoryLoader = new XMLHttpRequest();
         inventoryLoader.addEventListener("load", function () {
         // Add each car to the private _car_inventory array
         _car_inventory = JSON.parse(event.target.responseText).cars;
-
+       populateDomFromDomStuff(_car_inventory);
         });
-        inventoryLoader.open("GET", "/inventory.json");
+        inventoryLoader.open("GET", "../inventory.json");
         inventoryLoader.send();
       }
     }
-});
+  });
         globalScopeCarLot.Inventory = inventory;
         return globalScopeCarLot     
 
